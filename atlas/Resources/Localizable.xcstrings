@@ -1,0 +1,2130 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "ASIDE_DEPRECATED" : {
+      "comment" : "Default title of a deprecation callout in documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deprecated"
+          }
+        }
+      }
+    },
+    "ASIDE_EXPERIMENT" : {
+      "comment" : "Default title of an experiment callout in documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Experiment"
+          }
+        }
+      }
+    },
+    "ASIDE_IMPORTANT" : {
+      "comment" : "Default title of an important callout in documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Important"
+          }
+        }
+      }
+    },
+    "ASIDE_NOTE" : {
+      "comment" : "Default title of a note callout in documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note"
+          }
+        }
+      }
+    },
+    "ASIDE_TIP" : {
+      "comment" : "Default title of a tip callout in documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tip"
+          }
+        }
+      }
+    },
+    "ASIDE_WARNING" : {
+      "comment" : "Default title of a warning callout in documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warning"
+          }
+        }
+      }
+    },
+    "BADGE_BETA" : {
+      "comment" : "Badge on platforms where an API is in beta.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beta"
+          }
+        }
+      }
+    },
+    "BADGE_DEPRECATED" : {
+      "comment" : "Badge on deprecated documentation pages and symbols.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deprecated"
+          }
+        }
+      }
+    },
+    "BOOKMARKS_CARD_SUBTITLE" : {
+      "comment" : "Subtitle of a recently saved bookmark card; framework is a framework name, date is relative, such as “yesterday”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(framework)@ · %2$(date)@"
+          }
+        }
+      }
+    },
+    "BOOKMARKS_EMPTY_BROWSE_BUTTON" : {
+      "comment" : "Button on the empty bookmarks screen that opens the Library.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Browse Library"
+          }
+        }
+      }
+    },
+    "BOOKMARKS_EMPTY_MESSAGE" : {
+      "comment" : "Empty state message of the bookmarks list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bookmark pages to find them here, even offline."
+          }
+        }
+      }
+    },
+    "BOOKMARKS_EMPTY_TITLE" : {
+      "comment" : "Empty state title of the bookmarks list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Bookmarks"
+          }
+        }
+      }
+    },
+    "BOOKMARKS_FILTER_ALL" : {
+      "comment" : "Bookmarks filter chip showing every bookmark.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        }
+      }
+    },
+    "BOOKMARKS_OTHER_FRAMEWORK" : {
+      "comment" : "Group and filter name for bookmarks that don't belong to a framework.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Other"
+          }
+        }
+      }
+    },
+    "BOOKMARKS_RECENTLY_SAVED_HEADER" : {
+      "comment" : "Bookmarks section header for the most recent bookmarks.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recently Saved"
+          }
+        }
+      }
+    },
+    "BOOKMARK_BUTTON_ADD" : {
+      "comment" : "Button that bookmarks the current page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Bookmark"
+          }
+        }
+      }
+    },
+    "BOOKMARK_BUTTON_REMOVE" : {
+      "comment" : "Button that removes the current page from bookmarks.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove Bookmark"
+          }
+        }
+      }
+    },
+    "CODE_SNIPPET_SAVE_BUTTON" : {
+      "comment" : "VoiceOver label of the button that saves a code block as a snippet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save Snippet"
+          }
+        }
+      }
+    },
+    "CONTEXT_MENU_OPEN_ON_WEB" : {
+      "comment" : "Context-menu item that opens a documentation page in the web browser.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open on the Web"
+          }
+        }
+      }
+    },
+    "COPY_BUTTON_COPIED" : {
+      "comment" : "Copy button label (and VoiceOver label) right after copying.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copied"
+          }
+        }
+      }
+    },
+    "COPY_BUTTON_COPY" : {
+      "comment" : "Copy button label (and VoiceOver label) for copying code.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy"
+          }
+        }
+      }
+    },
+    "COPY_BUTTON_HINT" : {
+      "comment" : "VoiceOver hint of the Copy button.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copies the code to the clipboard"
+          }
+        }
+      }
+    },
+    "COPY_BUTTON_TOAST" : {
+      "comment" : "Toast shown after copying code.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copied to clipboard"
+          }
+        }
+      }
+    },
+    "DEPRECATION_BANNER_MESSAGE" : {
+      "comment" : "Banner text on a deprecated API page that has no deprecation notice of its own.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This API is deprecated. Prefer a current alternative in new code."
+          }
+        }
+      }
+    },
+    "DEPRECATION_BANNER_REPLACEMENTS" : {
+      "comment" : "Heading of the replacement APIs in the deprecation banner.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Instead"
+          }
+        }
+      }
+    },
+    "DEPRECATION_BANNER_TITLE" : {
+      "comment" : "Title of the banner on a deprecated API page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deprecated"
+          }
+        }
+      }
+    },
+    "DETAIL_AVAILABILITY_LABEL" : {
+      "comment" : "VoiceOver label of the list of platforms where an API is available.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Availability"
+          }
+        }
+      }
+    },
+    "DETAIL_DECLARATION_HEADER" : {
+      "comment" : "Heading above a symbol's code declaration.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Declaration"
+          }
+        }
+      }
+    },
+    "DETAIL_ERROR_TITLE" : {
+      "comment" : "Error screen title when a documentation page fails to load.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't Load Page"
+          }
+        }
+      }
+    },
+    "DETAIL_FULL_TEXT_ON_WEBSITE" : {
+      "comment" : "Explanation shown when a page's text can't be displayed in the app.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The full text of this page is available on the official website."
+          }
+        }
+      }
+    },
+    "DETAIL_LOADING_LABEL" : {
+      "comment" : "VoiceOver label of a documentation page while it loads.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading"
+          }
+        }
+      }
+    },
+    "DETAIL_OVERVIEW_TITLE" : {
+      "comment" : "Title of the first section of a documentation page, before its first heading.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Overview"
+          }
+        }
+      }
+    },
+    "DETAIL_RELATED_TITLE" : {
+      "comment" : "Section title listing pages related to a documentation page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Related"
+          }
+        }
+      }
+    },
+    "DETAIL_TOPICS_TITLE" : {
+      "comment" : "Section title listing the topics (child pages) of a documentation page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Topics"
+          }
+        }
+      }
+    },
+    "DETAIL_UNSUPPORTED_BLOCK" : {
+      "comment" : "Placeholder for documentation content the app can't display; kind is a content type name from the source, such as “table”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This %1$(kind)@ can be viewed on the official website."
+          }
+        }
+      }
+    },
+    "DETAIL_VIEW_ORIGINAL_PAGE" : {
+      "comment" : "Link at the bottom of a documentation page to its original web page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View the original page"
+          }
+        }
+      }
+    },
+    "ERROR_INVALID_RESPONSE" : {
+      "comment" : "Error message when a documentation source returns unreadable data.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The documentation source sent data Atlas couldn't read."
+          }
+        }
+      }
+    },
+    "ERROR_NOT_FOUND" : {
+      "comment" : "Error message when a documentation page no longer exists.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This page no longer exists at its source."
+          }
+        }
+      }
+    },
+    "ERROR_OFFLINE" : {
+      "comment" : "Error message when a page can't be loaded offline.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're offline and this page hasn't been saved for offline reading yet."
+          }
+        }
+      }
+    },
+    "ERROR_SOURCE_DISABLED" : {
+      "comment" : "Error message when the page's documentation source is turned off.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading this source in Atlas is turned off. You can read it on the official website."
+          }
+        }
+      }
+    },
+    "ERROR_STATE_RETRY_BUTTON" : {
+      "comment" : "Button on an error screen that retries the failed operation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Try Again"
+          }
+        }
+      }
+    },
+    "ERROR_TRANSPORT" : {
+      "comment" : "Error message for network failures; reason is a system-provided error description.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The documentation couldn't be loaded: %1$(reason)@"
+          }
+        }
+      }
+    },
+    "ERROR_UNKNOWN_SOURCE" : {
+      "comment" : "Error message when no documentation source handles the page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No documentation source is connected for this page yet."
+          }
+        }
+      }
+    },
+    "EVOLUTION_ROOT_ABSTRACT" : {
+      "comment" : "Summary of the Swift Evolution collection page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(count)lld proposals for changes to the Swift language and standard library."
+          }
+        }
+      }
+    },
+    "FEATURED_HERO_EXPLORE" : {
+      "comment" : "Pill on a featured framework card inviting to open it.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explore"
+          }
+        }
+      }
+    },
+    "FEATURED_HERO_EYEBROW" : {
+      "comment" : "Default small heading above a featured framework card.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Featured"
+          }
+        }
+      }
+    },
+    "FRAMEWORK_FEATURED_HEADER" : {
+      "comment" : "Framework page section header for featured symbols.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Featured"
+          }
+        }
+      }
+    },
+    "FRAMEWORK_HEADER_COUNTS" : {
+      "comment" : "Framework header line combining counts, e.g. “12 topics · 340 pages”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(topics)@ · %2$(pages)@"
+          }
+        }
+      }
+    },
+    "FRAMEWORK_MATCHING_PAGES" : {
+      "comment" : "Heading of a framework's pages that match the text typed in its search field.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matching Pages"
+          }
+        }
+      }
+    },
+    "FRAMEWORK_NO_MATCHES" : {
+      "comment" : "Shown when no page of a framework matches the filter; framework is a framework name, query is what the user typed.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pages of %1$(framework)@ match “%2$(query)@”."
+          }
+        }
+      }
+    },
+    "FRAMEWORK_NO_PAGES_MESSAGE" : {
+      "comment" : "Empty state message of a framework's page list when it has no subpages.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This page has no subpages; it's open in the reading pane."
+          }
+        }
+      }
+    },
+    "FRAMEWORK_NO_PAGES_TITLE" : {
+      "comment" : "Empty state title of a framework's page list when it has no subpages.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Pages"
+          }
+        }
+      }
+    },
+    "FRAMEWORK_PAGE_COUNT" : {
+      "comment" : "Number of pages of a framework.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$(count)lld page"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$(count)lld pages"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "FRAMEWORK_SEARCH_CLEAR" : {
+      "comment" : "Button that clears the framework search field.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear"
+          }
+        }
+      }
+    },
+    "FRAMEWORK_SEARCH_PROMPT" : {
+      "comment" : "Placeholder of the search field on a framework page; framework is a framework name.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search in %1$(framework)@"
+          }
+        }
+      }
+    },
+    "FRAMEWORK_TOPIC_COUNT" : {
+      "comment" : "Number of topics of a framework.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$(count)lld topic"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$(count)lld topics"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "FRESHNESS_OFFLINE" : {
+      "comment" : "Offline banner; date is a short month and day, such as “Oct 30”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're offline — showing cached copy from %1$(date)@"
+          }
+        }
+      }
+    },
+    "FRESHNESS_RETRY" : {
+      "comment" : "Offline banner button that tries to load fresh content again.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        }
+      }
+    },
+    "FRESHNESS_UPDATED" : {
+      "comment" : "Caption saying when cached content was last updated; date is relative, such as “yesterday”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Updated %1$(date)@"
+          }
+        }
+      }
+    },
+    "KIND_ARTICLE" : {
+      "comment" : "Documentation page kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Article"
+          }
+        }
+      }
+    },
+    "KIND_ASSOCIATED_TYPE" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Associated type"
+          }
+        }
+      }
+    },
+    "KIND_CLASS" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Class"
+          }
+        }
+      }
+    },
+    "KIND_COLLECTION" : {
+      "comment" : "Documentation page kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Collection"
+          }
+        }
+      }
+    },
+    "KIND_ENUMERATION" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enumeration"
+          }
+        }
+      }
+    },
+    "KIND_ENUMERATION_CASE" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enumeration case"
+          }
+        }
+      }
+    },
+    "KIND_FRAMEWORK" : {
+      "comment" : "Documentation page kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Framework"
+          }
+        }
+      }
+    },
+    "KIND_FUNCTION" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Function"
+          }
+        }
+      }
+    },
+    "KIND_INITIALIZER" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Initializer"
+          }
+        }
+      }
+    },
+    "KIND_MACRO" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Macro"
+          }
+        }
+      }
+    },
+    "KIND_METHOD" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Method"
+          }
+        }
+      }
+    },
+    "KIND_OPERATOR" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Operator"
+          }
+        }
+      }
+    },
+    "KIND_PAGE" : {
+      "comment" : "Documentation page kind when the kind is unknown, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Page"
+          }
+        }
+      }
+    },
+    "KIND_PROPERTY" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Property"
+          }
+        }
+      }
+    },
+    "KIND_PROTOCOL" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protocol"
+          }
+        }
+      }
+    },
+    "KIND_SAMPLE_CODE" : {
+      "comment" : "Documentation page kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sample code"
+          }
+        }
+      }
+    },
+    "KIND_STRUCTURE" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Structure"
+          }
+        }
+      }
+    },
+    "KIND_TUTORIAL" : {
+      "comment" : "Documentation page kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutorial"
+          }
+        }
+      }
+    },
+    "KIND_TYPE_ALIAS" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Type alias"
+          }
+        }
+      }
+    },
+    "KIND_VARIABLE" : {
+      "comment" : "Swift symbol kind, shown in rows and read by VoiceOver.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Variable"
+          }
+        }
+      }
+    },
+    "LAUNCH_ERROR_TITLE" : {
+      "comment" : "Title of the error screen shown when the app's library store can't be opened at launch.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atlas Couldn't Open Its Library"
+          }
+        }
+      }
+    },
+    "LIBRARY_DISABLED_SOURCES_MESSAGE" : {
+      "comment" : "Library notice under the names of documentation sources that are turned off.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turned off. You can still browse these pages on the official website, or turn the source on in Settings for personal use."
+          }
+        }
+      }
+    },
+    "LIBRARY_DISABLED_SOURCES_OPEN_WEBSITE" : {
+      "comment" : "Link in the Library notice about turned-off sources that opens Apple's developer website.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open developer.apple.com"
+          }
+        }
+      }
+    },
+    "LIBRARY_EMPTY_MESSAGE" : {
+      "comment" : "Library empty state message when no documentation is available.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No documentation is available right now. Your bookmarks and snippets are still available."
+          }
+        }
+      }
+    },
+    "LIBRARY_EMPTY_TITLE" : {
+      "comment" : "Library empty state title when no documentation is available.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Documentation Yet"
+          }
+        }
+      }
+    },
+    "LIBRARY_ERROR_TITLE" : {
+      "comment" : "Library error screen title when the framework catalogue fails to load.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't Load the Catalogue"
+          }
+        }
+      }
+    },
+    "LIBRARY_FEATURED_HEADER" : {
+      "comment" : "Library section header for featured frameworks.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Featured"
+          }
+        }
+      }
+    },
+    "LIBRARY_LOADING_LABEL" : {
+      "comment" : "VoiceOver label of the Library while the catalogue loads.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading the catalogue"
+          }
+        }
+      }
+    },
+    "LIBRARY_RECENTLY_VIEWED_HEADER" : {
+      "comment" : "Library section header (and navigation title of the full list) for recently viewed pages.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recently Viewed"
+          }
+        }
+      }
+    },
+    "LIBRARY_SEARCH_HINT" : {
+      "comment" : "VoiceOver hint of the search field look-alike at the top of the Library.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Searches frameworks, symbols and articles"
+          }
+        }
+      }
+    },
+    "LIBRARY_SEARCH_PROMPT" : {
+      "comment" : "Placeholder text of the search field look-alike at the top of the Library.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frameworks, symbols, articles"
+          }
+        }
+      }
+    },
+    "LIBRARY_SEE_ALL" : {
+      "comment" : "Link next to a Library section header that shows every item of the section.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See All"
+          }
+        }
+      }
+    },
+    "LIBRARY_SETTINGS_BUTTON" : {
+      "comment" : "Library toolbar button that opens Settings (iPhone).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
+    },
+    "LOADING_STATE_DEFAULT" : {
+      "comment" : "Default text under a loading spinner.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading…"
+          }
+        }
+      }
+    },
+    "OFFICIAL_DOCS_OPEN_BUTTON" : {
+      "comment" : "Button that opens the page on its official website.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Official Documentation"
+          }
+        }
+      }
+    },
+    "OFFICIAL_DOCS_TITLE" : {
+      "comment" : "Title of the card shown when a page is read on its official website.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read on the Official Website"
+          }
+        }
+      }
+    },
+    "READING_PANE_EMPTY_MESSAGE" : {
+      "comment" : "Empty reading pane message when no page is selected (iPad/Mac).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a framework, search result or bookmark to start reading."
+          }
+        }
+      }
+    },
+    "READING_PANE_EMPTY_TITLE" : {
+      "comment" : "Empty reading pane title when no page is selected (iPad/Mac).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select a Page"
+          }
+        }
+      }
+    },
+    "RECENT_EMPTY_MESSAGE" : {
+      "comment" : "Empty state message of the reading history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pages you open appear here so you can pick up where you left off."
+          }
+        }
+      }
+    },
+    "RECENT_EMPTY_TITLE" : {
+      "comment" : "Empty state title of the reading history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nothing Read Yet"
+          }
+        }
+      }
+    },
+    "RECENT_ROW_SUBTITLE" : {
+      "comment" : "Subtitle of a recently opened page; framework is a framework name, date is relative, such as “yesterday”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(framework)@ · %2$(date)@"
+          }
+        }
+      }
+    },
+    "SEARCH_ERROR_TITLE" : {
+      "comment" : "Search error screen title.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search Failed"
+          }
+        }
+      }
+    },
+    "SEARCH_IDLE_MESSAGE" : {
+      "comment" : "Search screen message before typing, when there's no history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Find frameworks, types, methods and articles by name."
+          }
+        }
+      }
+    },
+    "SEARCH_IDLE_TITLE" : {
+      "comment" : "Search screen title before typing, when there's no history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search Documentation"
+          }
+        }
+      }
+    },
+    "SEARCH_LOADING" : {
+      "comment" : "Text under the spinner while a search runs.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Searching…"
+          }
+        }
+      }
+    },
+    "SEARCH_NO_RESULTS_APPLE_MESSAGE" : {
+      "comment" : "Search empty state message when Apple pages are enabled; query is what the user typed.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nothing matches “%1$(query)@”. Looking for an Apple API? Open its framework once in the Library — its whole API then becomes searchable."
+          }
+        }
+      }
+    },
+    "SEARCH_NO_RESULTS_MESSAGE" : {
+      "comment" : "Search empty state message; query is what the user typed.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nothing matches “%1$(query)@”. Check the spelling or try a broader term."
+          }
+        }
+      }
+    },
+    "SEARCH_NO_RESULTS_TITLE" : {
+      "comment" : "Search empty state title when nothing matches.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Results"
+          }
+        }
+      }
+    },
+    "SEARCH_RECENTLY_OPENED_HEADER" : {
+      "comment" : "Search screen section header listing recently opened pages.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recently Opened"
+          }
+        }
+      }
+    },
+    "SEARCH_SCOPE_ALL" : {
+      "comment" : "Search scope that includes every kind of result.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        }
+      }
+    },
+    "SEARCH_SCOPE_ARTICLES" : {
+      "comment" : "Search scope limited to articles.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Articles"
+          }
+        }
+      }
+    },
+    "SEARCH_SCOPE_FRAMEWORKS" : {
+      "comment" : "Search scope limited to frameworks.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frameworks"
+          }
+        }
+      }
+    },
+    "SEARCH_SCOPE_NOTICE_FULL_TEXT" : {
+      "comment" : "Search scope notice when full-text search is available; sources is a list of documentation source names such as “The Swift Programming Language and Swift Evolution”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Searches titles, symbols and keywords, plus the full text of %1$(sources)@."
+          }
+        }
+      }
+    },
+    "SEARCH_SCOPE_NOTICE_METADATA" : {
+      "comment" : "Search scope notice when only metadata search is available.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Searches titles, symbols, frameworks and keywords."
+          }
+        }
+      }
+    },
+    "SEARCH_SCOPE_SYMBOLS" : {
+      "comment" : "Search scope limited to symbols.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbols"
+          }
+        }
+      }
+    },
+    "SEARCH_SECTION_ARTICLES" : {
+      "comment" : "Search results section header for articles.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Articles"
+          }
+        }
+      }
+    },
+    "SEARCH_SECTION_FRAMEWORKS" : {
+      "comment" : "Search results section header for frameworks.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frameworks"
+          }
+        }
+      }
+    },
+    "SEARCH_SECTION_PASSAGES" : {
+      "comment" : "Search results section header for full-text matches inside pages.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In the Text"
+          }
+        }
+      }
+    },
+    "SEARCH_SECTION_SYMBOLS" : {
+      "comment" : "Search results section header for symbols.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbols"
+          }
+        }
+      }
+    },
+    "SEARCH_TOP_HIT" : {
+      "comment" : "Small heading on the best search result card.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Top Hit"
+          }
+        }
+      }
+    },
+    "SECTION_BOOKMARKS" : {
+      "comment" : "App section title (tab, sidebar row, navigation title).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bookmarks"
+          }
+        }
+      }
+    },
+    "SECTION_LIBRARY" : {
+      "comment" : "App section title (tab, sidebar row, navigation title).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Library"
+          }
+        }
+      }
+    },
+    "SECTION_RECENT" : {
+      "comment" : "App section title (sidebar row, navigation title).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recent"
+          }
+        }
+      }
+    },
+    "SECTION_SEARCH" : {
+      "comment" : "App section title (tab, sidebar row, navigation title).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        }
+      }
+    },
+    "SECTION_SETTINGS" : {
+      "comment" : "App section title (sidebar row, navigation title).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
+    },
+    "SECTION_SNIPPETS" : {
+      "comment" : "App section title (tab, sidebar row, navigation title).",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snippets"
+          }
+        }
+      }
+    },
+    "SETTINGS_ABOUT_HEADER" : {
+      "comment" : "Settings section header for information about the app.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About"
+          }
+        }
+      }
+    },
+    "SETTINGS_APPLE_FOOTER" : {
+      "comment" : "Settings footer explaining why loading Apple pages is off by default.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Off by default: Apple's website terms don't allow reproducing its content or accessing it automatically without permission, so Atlas doesn't contact developer.apple.com and links to it instead. Turn this on only for personal use: the catalogue and pages are then loaded when you open them, with attribution, and opening a framework makes its whole API searchable by name (one request per framework, rechecked weekly). The Swift Programming Language is always available (Apache 2.0)."
+          }
+        }
+      }
+    },
+    "SETTINGS_APPLE_HEADER" : {
+      "comment" : "Settings section header for Apple developer documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Developer Documentation"
+          }
+        }
+      }
+    },
+    "SETTINGS_APPLE_TERMS_LINK" : {
+      "comment" : "Settings link to Apple's website terms of use.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Website Terms of Use"
+          }
+        }
+      }
+    },
+    "SETTINGS_APPLE_TOGGLE" : {
+      "comment" : "Settings switch that allows loading Apple developer documentation pages in the app.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Load Apple Pages in Atlas"
+          }
+        }
+      }
+    },
+    "SETTINGS_CLEAR_HISTORY_BUTTON" : {
+      "comment" : "Settings button that asks to clear the reading history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear Reading History"
+          }
+        }
+      }
+    },
+    "SETTINGS_CLEAR_HISTORY_CONFIRM_BUTTON" : {
+      "comment" : "Destructive button of the confirmation dialog that clears the reading history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear History"
+          }
+        }
+      }
+    },
+    "SETTINGS_CLEAR_HISTORY_CONFIRM_MESSAGE" : {
+      "comment" : "Message of the confirmation dialog before clearing the reading history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bookmarks and snippets are not affected."
+          }
+        }
+      }
+    },
+    "SETTINGS_CLEAR_HISTORY_CONFIRM_TITLE" : {
+      "comment" : "Title of the confirmation dialog before clearing the reading history.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear your reading history?"
+          }
+        }
+      }
+    },
+    "SETTINGS_DONE_BUTTON" : {
+      "comment" : "Button that dismisses the Settings sheet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "SETTINGS_LIBRARY_SECTIONS_FOOTER" : {
+      "comment" : "Settings footer of the Library sections switches.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hidden sections don't appear in the Library. Their pages are still found by search."
+          }
+        }
+      }
+    },
+    "SETTINGS_LIBRARY_SECTIONS_HEADER" : {
+      "comment" : "Settings section header listing switches for each Library category.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Library Sections"
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_CHECKED" : {
+      "comment" : "Settings subtitle part saying when a source was last checked for updates; date is relative, such as “yesterday”. Follows the page count after a “·”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "checked %1$(date)@"
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_DOWNLOAD_BUTTON" : {
+      "comment" : "Settings button that downloads a documentation source for offline reading.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Download"
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_FOOTER" : {
+      "comment" : "Settings footer explaining offline downloads.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "These openly licensed guides are downloaded so you can read them offline and search their full text. Atlas checks for updates at most once a week, and unchanged pages aren't downloaded again."
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_HEADER" : {
+      "comment" : "Settings section header for downloaded documentation.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offline Reading & Full-Text Search"
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_NOT_DOWNLOADED" : {
+      "comment" : "Settings subtitle of a documentation source that hasn't been downloaded.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not downloaded"
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_PAGES_AVAILABLE" : {
+      "comment" : "Settings subtitle with the number of pages of a source available offline.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(count)lld pages available offline"
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_PROGRESS" : {
+      "comment" : "Download progress of a documentation source, e.g. “12 of 52 pages”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(completed)lld of %2$(total)lld pages"
+          }
+        }
+      }
+    },
+    "SETTINGS_OFFLINE_UPDATE_BUTTON" : {
+      "comment" : "Settings button that updates a downloaded documentation source.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update"
+          }
+        }
+      }
+    },
+    "SETTINGS_PRIVACY_FOOTER" : {
+      "comment" : "Settings footer of the privacy section.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your bookmarks, snippets and history are stored only on this device."
+          }
+        }
+      }
+    },
+    "SETTINGS_PRIVACY_HEADER" : {
+      "comment" : "Settings section header for privacy.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy"
+          }
+        }
+      }
+    },
+    "SETTINGS_SOURCES_FOOTER" : {
+      "comment" : "Settings footer of the documentation sources switches.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turned-off sources disappear from the Library and search. Your bookmarks from them are kept."
+          }
+        }
+      }
+    },
+    "SETTINGS_SOURCES_HEADER" : {
+      "comment" : "Settings section header listing switches for each documentation source.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documentation Sources"
+          }
+        }
+      }
+    },
+    "SETTINGS_VERSION" : {
+      "comment" : "Settings row label showing the app version.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version"
+          }
+        }
+      }
+    },
+    "SIDEBAR_FRAMEWORKS_HEADER" : {
+      "comment" : "Sidebar section header listing frameworks.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frameworks"
+          }
+        }
+      }
+    },
+    "SIDEBAR_OFFLINE_FOOTER" : {
+      "comment" : "Sidebar footer; date is a relative date such as “yesterday”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Offline library · updated %1$(date)@"
+          }
+        }
+      }
+    },
+    "SIDEBAR_SEARCH_BUTTON" : {
+      "comment" : "Sidebar toolbar button that opens Search.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        }
+      }
+    },
+    "SNIPPETS_EMPTY_MESSAGE" : {
+      "comment" : "Empty state message of the snippets list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write your own snippets, or save code examples from pages that allow it."
+          }
+        }
+      }
+    },
+    "SNIPPETS_EMPTY_TITLE" : {
+      "comment" : "Empty state title of the snippets list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Snippets"
+          }
+        }
+      }
+    },
+    "SNIPPETS_FILTER_ALL" : {
+      "comment" : "Snippets filter chip showing every snippet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
+        }
+      }
+    },
+    "SNIPPETS_FILTER_DOCUMENTATION" : {
+      "comment" : "Snippets filter chip showing snippets saved from documentation pages.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From Docs"
+          }
+        }
+      }
+    },
+    "SNIPPETS_FILTER_USER_AUTHORED" : {
+      "comment" : "Snippets filter chip showing snippets the user wrote.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yours"
+          }
+        }
+      }
+    },
+    "SNIPPETS_NEW_BUTTON" : {
+      "comment" : "Button that creates a new code snippet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Snippet"
+          }
+        }
+      }
+    },
+    "SNIPPET_DELETE_BUTTON" : {
+      "comment" : "Context-menu item that deletes a snippet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        }
+      }
+    },
+    "SNIPPET_EDITOR_CANCEL_BUTTON" : {
+      "comment" : "Snippet editor button that discards changes.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "SNIPPET_EDITOR_CODE_HEADER" : {
+      "comment" : "Snippet editor section header for the code.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code"
+          }
+        }
+      }
+    },
+    "SNIPPET_EDITOR_LANGUAGE_HEADER" : {
+      "comment" : "Snippet editor section header for the programming language.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language"
+          }
+        }
+      }
+    },
+    "SNIPPET_EDITOR_NEW_TITLE" : {
+      "comment" : "Snippet editor navigation title while the snippet has no title.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Snippet"
+          }
+        }
+      }
+    },
+    "SNIPPET_EDITOR_SAVE_BUTTON" : {
+      "comment" : "Snippet editor button that saves the snippet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
+    "SNIPPET_EDITOR_TITLE_HEADER" : {
+      "comment" : "Snippet editor section header for the snippet title.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        }
+      }
+    },
+    "SNIPPET_EDIT_BUTTON" : {
+      "comment" : "Button (and context-menu item) that edits a snippet.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edit"
+          }
+        }
+      }
+    },
+    "SNIPPET_ERROR_EMPTY_CODE" : {
+      "comment" : "Error shown when saving a snippet without code.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A snippet needs some code."
+          }
+        }
+      }
+    },
+    "SNIPPET_HEADER" : {
+      "comment" : "Code block header of a snippet; language is a programming language name such as “Swift”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(language)@ · %2$(lines)lld lines"
+          }
+        }
+      }
+    },
+    "SNIPPET_META_LINE" : {
+      "comment" : "Line under a snippet title; origin is “Written by you” or “From documentation”, date is relative, such as “yesterday”.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$(origin)@ · Saved %2$(date)@"
+          }
+        }
+      }
+    },
+    "SNIPPET_ORIGIN_DOCUMENTATION" : {
+      "comment" : "Origin of a snippet saved from a documentation page.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "From documentation"
+          }
+        }
+      }
+    },
+    "SNIPPET_ORIGIN_USER_AUTHORED" : {
+      "comment" : "Origin of a snippet the user wrote.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Written by you"
+          }
+        }
+      }
+    },
+    "SNIPPET_UNTITLED" : {
+      "comment" : "Placeholder of the snippet title field, and title given to snippets saved without one.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untitled Snippet"
+          }
+        }
+      }
+    },
+    "TOPICS_DEPRECATED_COUNT" : {
+      "comment" : "Collapsed group of deprecated APIs in a topic list.",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$(count)lld deprecated API"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%1$(count)lld deprecated APIs"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

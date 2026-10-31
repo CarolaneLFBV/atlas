@@ -1,0 +1,92 @@
+{
+  "fill-specializations" : [
+    {
+      "value" : {
+        "linear-gradient" : [
+          "srgb:1.00000,0.99700,0.99100,1.00000",
+          "srgb:0.94300,0.95300,0.98000,1.00000"
+        ]
+      }
+    },
+    {
+      "appearance" : "dark",
+      "value" : "system-dark"
+    }
+  ],
+  "groups" : [
+    {
+      "blur-material" : 0.18,
+      "layers" : [
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "srgb:0.97647,0.98824,1.00000,1.00000",
+              "srgb:0.78824,0.83137,0.98824,1.00000"
+            ]
+          },
+          "image-name" : "03-Page-avant-perle.svg",
+          "name" : "03 — Dalle avant perle"
+        }
+      ],
+      "name" : "03 — Dalle avant perle",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.2
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.62
+      }
+    },
+    {
+      "blur-material" : 0.18,
+      "layers" : [
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "srgb:0.78431,0.89412,1.00000,1.00000",
+              "srgb:0.52941,0.62353,0.99216,1.00000"
+            ]
+          },
+          "image-name" : "02-Page-milieu-bleu.svg",
+          "name" : "02 — Dalle centrale bleu"
+        }
+      ],
+      "name" : "02 — Dalle centrale bleu",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.2
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.44
+      }
+    },
+    {
+      "layers" : [
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "srgb:0.46275,0.68235,1.00000,1.00000",
+              "srgb:0.39608,0.32157,1.00000,1.00000"
+            ]
+          },
+          "image-name" : "01-Page-arriere-lavande.svg",
+          "name" : "01 — Dalle arrière lavande"
+        }
+      ],
+      "name" : "01 — Dalle arrière lavande",
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.2
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.22
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : "shared"
+  }
+}

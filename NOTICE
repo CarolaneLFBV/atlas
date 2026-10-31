@@ -1,0 +1,23 @@
+Atlas
+Copyright 2026 Carolane Lefebvre
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+Third-party content
+-------------------
+Atlas does not include any documentation in this repository. At runtime it can download,
+cache and display the following openly licensed content, each attributed in the app:
+
+- The Swift Programming Language and the Swift 6 Concurrency Migration Guide,
+  from docs.swift.org — Copyright Apple Inc. and the Swift project authors,
+  licensed under the Apache License, Version 2.0.
+- Swift Evolution proposals, from github.com/swiftlang/swift-evolution —
+  Copyright Apple Inc. and the Swift project authors, licensed under the
+  Apache License, Version 2.0.
+
+Apple Developer Documentation (developer.apple.com) is not licensed for redistribution.
+Atlas never contacts developer.apple.com unless the user turns that on in Settings for
+personal use; see docs/DocumentationSources.md.
+
+Apple, Swift, SwiftUI, Xcode and other Apple product names are trademarks of Apple Inc.
+Atlas is not affiliated with or endorsed by Apple Inc.

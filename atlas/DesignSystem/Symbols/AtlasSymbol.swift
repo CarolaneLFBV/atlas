@@ -1,0 +1,26 @@
+import Foundation
+
+enum AtlasSymbol {
+    static let library = "books.vertical"
+    static let search = "magnifyingglass"
+    static let bookmark = "bookmark"
+    static let bookmarkFilled = "bookmark.fill"
+    static let snippets = "chevron.left.forwardslash.chevron.right"
+    static let recent = "clock.arrow.circlepath"
+    static let settings = "gearshape"
+    static let copy = "doc.on.doc"
+    static let copied = "checkmark"
+    static let confirmation = "checkmark.circle.fill"
+    static let disclosure = "chevron.right"
+    static let add = "plus"
+    static let clear = "xmark.circle.fill"
+    static let openExternal = "safari"
+    static let offline = "wifi.slash"
+    static let error = "exclamationmark.triangle"
+    static let refresh = "arrow.clockwise"
+    static let article = "doc.text"
+    static let tutorial = "graduationcap"
+    static let sampleCode = "chevron.left.forwardslash.chevron.right"
+    static let collection = "square.stack"
+    static let license = "checkmark.seal"
+}
