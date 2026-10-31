@@ -1,6 +1,10 @@
-# Atlas
+<p align="center">
+  <img src="docs/images/atlas-icon.png" alt="Atlas app icon" width="128" height="128">
+</p>
 
-A native documentation companion for Swift and Apple-platform developers, for iPhone, iPad and Mac.
+<h1 align="center">Atlas</h1>
+
+<p align="center">A native documentation companion for Swift and Apple-platform developers, for iPhone, iPad and Mac.</p>
 
 Atlas brings The Swift Programming Language, the Swift 6 migration guide and Swift Evolution into a fast,
 offline-first reader with real search, bookmarks and code snippets.
