@@ -10,8 +10,23 @@
   <a href="https://github.com/CarolaneLFBV/atlas/actions/workflows/tests.yml"><img src="https://github.com/CarolaneLFBV/atlas/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
 </p>
 
-Atlas brings The Swift Programming Language, the Swift 6 migration guide and Swift Evolution into a fast,
-offline-first reader with real search, bookmarks and code snippets.
+Atlas is a Swift and Swift Evolution reader. It brings The Swift Programming Language, the Swift 6 migration
+guide and every Swift Evolution proposal into a fast, offline-first app with full-text search, bookmarks and code
+snippets. Apple Developer Documentation is optional and off by default, for personal use.
+
+<p align="center">
+  <img src="docs/images/iphone-library.png" alt="Library on iPhone, featuring The Swift Programming Language, Migrating to Swift 6 and Swift Evolution" width="200">
+  <img src="docs/images/iphone-search.png" alt="Full-text search for @concurrent on iPhone, with matching passages from Swift Evolution proposals" width="200">
+  <img src="docs/images/iphone-reading.png" alt="The Concurrency chapter of The Swift Programming Language on iPhone, with a syntax-highlighted code block" width="200">
+  <img src="docs/images/iphone-evolution-dark.png" alt="Swift Evolution proposal SE-0461 in dark mode on iPhone" width="200">
+</p>
+
+<p align="center">
+  <img src="docs/images/ipad-reading.png" alt="Three-column layout on iPad: sidebar, the Swift book's pages and the Concurrency chapter" width="49%">
+  <img src="docs/images/ipad-search-dark.png" alt="Search results for @concurrent and a Swift Evolution proposal on iPad in dark mode" width="49%">
+</p>
+
+<p align="center"><sub>Screenshots of the app's real content (iOS 27.2 simulators), with the Apple source off.</sub></p>
 
 ## Features
 
@@ -35,6 +50,15 @@ offline-first reader with real search, bookmarks and code snippets.
 Apple's Website Terms of Use don't permit reproducing developer.apple.com content or accessing it automatically
 without permission. Atlas therefore never contacts developer.apple.com unless you turn it on in Settings, for your
 own personal use; it never bulk-downloads Apple pages. See [docs/DocumentationSources.md](docs/DocumentationSources.md).
+
+### Turning on Apple Developer Documentation
+
+In **Settings → Apple Developer Documentation**, turn on **Load Apple Pages in Atlas**. Then:
+
+- The catalogue and each page are loaded only when you open them, with attribution and a link to developer.apple.com.
+- Opening a framework makes its whole API searchable by name (one request per framework, rechecked weekly).
+- Apple pages are never downloaded in bulk or full-text indexed. Turn the setting off and developer.apple.com is
+  no longer contacted at all.
 
 No documentation is stored in this repository: content is downloaded and cached on the device.
 
