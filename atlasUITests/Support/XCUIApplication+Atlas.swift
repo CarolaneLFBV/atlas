@@ -16,7 +16,11 @@ extension XCUIApplication {
         if tab.exists {
             tab.tap()
         } else {
-            descendants(matching: .any)["sidebar.\(title.lowercased())"].firstMatch.tap()
+            let row = descendants(matching: .any)["sidebar.\(title.lowercased())"].firstMatch
+            if !row.exists {
+                buttons["Show Sidebar"].firstMatch.tap()
+            }
+            row.tap()
         }
     }
 }
