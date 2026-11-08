@@ -1,0 +1,64 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: ${{ matrix.name }}
+    runs-on: xcode-27
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: iPhone
+            destination: platform=iOS Simulator,name=iPhone 18 Pro,OS=27.0
+          - name: iPad
+            destination: platform=iOS Simulator,name=iPad Pro 13-inch (M5),OS=27.0
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Select Xcode 27.2
+        run: sudo xcode-select --switch /Applications/Xcode_27.2.app
+
+      - name: Unit tests
+        run: >
+          xcodebuild test
+          -project atlas.xcodeproj
+          -scheme atlasTests
+          -destination "${{ matrix.destination }}"
+          -enableCodeCoverage YES
+          -resultBundlePath UnitTests.xcresult
+
+      - name: Coverage
+        if: ${{ !cancelled() && hashFiles('UnitTests.xcresult/**') != '' }}
+        run: |
+          {
+            echo "### Coverage (${{ matrix.name }})"
+            echo '```'
+            xcrun xccov view --report --only-targets UnitTests.xcresult
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: UI tests
+        if: ${{ !cancelled() }}
+        run: >
+          xcodebuild test
+          -project atlas.xcodeproj
+          -scheme atlasUITests
+          -destination "${{ matrix.destination }}"
+          -resultBundlePath UITests.xcresult
+
+      - name: Upload test results
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: test-results-${{ matrix.name }}
+          path: '*.xcresult'

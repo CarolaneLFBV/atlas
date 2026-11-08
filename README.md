@@ -6,6 +6,10 @@
 
 <p align="center">A native documentation companion for Swift and Apple-platform developers, for iPhone, iPad and Mac.</p>
 
+<p align="center">
+  <a href="https://github.com/CarolaneLFBV/atlas/actions/workflows/tests.yml"><img src="https://github.com/CarolaneLFBV/atlas/actions/workflows/tests.yml/badge.svg" alt="Tests"></a>
+</p>
+
 Atlas brings The Swift Programming Language, the Swift 6 migration guide and Swift Evolution into a fast,
 offline-first reader with real search, bookmarks and code snippets.
 
@@ -37,7 +41,7 @@ No documentation is stored in this repository: content is downloaded and cached 
 ## Requirements
 
 - Xcode 27 or later
-- iOS 27.2, iPadOS 27.2 or macOS 27.2 or later
+- iOS 26, iPadOS 26 or macOS 26 or later
 
 ## Building
 
