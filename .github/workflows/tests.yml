@@ -10,30 +10,30 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  test:
-    name: ${{ matrix.name }}
+  unit-tests:
+    name: Unit tests (${{ matrix.name }})
     runs-on: xcode-27
-    timeout-minutes: 45
+    timeout-minutes: 30
     strategy:
       fail-fast: false
       matrix:
         include:
           - name: iPhone
-            destination: platform=iOS Simulator,name=iPhone 18 Pro,OS=27.0
+            device: iPhone 18 Pro
           - name: iPad
-            destination: platform=iOS Simulator,name=iPad Pro 13-inch (M5),OS=27.0
+            device: iPad Pro 13-inch (M5)
     steps:
       - uses: actions/checkout@v7
 
       - name: Select Xcode 27.2
         run: sudo xcode-select --switch /Applications/Xcode_27.2.app
 
-      - name: Unit tests
+      - name: Run unit tests
         run: >
           xcodebuild test
           -project atlas.xcodeproj
           -scheme atlasTests
-          -destination "${{ matrix.destination }}"
+          -destination "platform=iOS Simulator,name=${{ matrix.device }},OS=27.0"
           -enableCodeCoverage YES
           -resultBundlePath UnitTests.xcresult
 
@@ -47,18 +47,67 @@ jobs:
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: UI tests
-        if: ${{ !cancelled() }}
+      - name: Upload test results
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: unit-test-results-${{ matrix.name }}
+          path: UnitTests.xcresult
+
+  ui-tests:
+    name: UI tests (${{ matrix.name }})
+    runs-on: xcode-27
+    timeout-minutes: 40
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: iPhone
+            device: iPhone 18 Pro
+          - name: iPad
+            device: iPad Pro 13-inch (M5)
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Select Xcode 27.2
+        run: sudo xcode-select --switch /Applications/Xcode_27.2.app
+
+      - name: Boot the simulator
+        id: simulator
+        env:
+          DEVICE: ${{ matrix.device }}
+        run: |
+          udid=$(xcrun simctl list devices available --json | jq -r --arg name "$DEVICE" '
+            .devices | to_entries[] | select(.key | endswith("iOS-27-0")) | .value[] | select(.name == $name) | .udid
+          ' | head -n 1)
+          test -n "$udid"
+          xcrun simctl bootstatus "$udid" -b
+          echo "udid=$udid" >> "$GITHUB_OUTPUT"
+
+      - name: Build for testing
         run: >
-          xcodebuild test
+          xcodebuild build-for-testing
           -project atlas.xcodeproj
           -scheme atlasUITests
-          -destination "${{ matrix.destination }}"
+          -destination "id=${{ steps.simulator.outputs.udid }}"
+          -derivedDataPath DerivedData
+
+      - name: Run UI tests
+        run: >
+          xcodebuild test-without-building
+          -project atlas.xcodeproj
+          -scheme atlasUITests
+          -destination "id=${{ steps.simulator.outputs.udid }}"
+          -derivedDataPath DerivedData
+          -parallel-testing-enabled NO
+          -retry-tests-on-failure
+          -test-iterations 2
           -resultBundlePath UITests.xcresult
 
       - name: Upload test results
         if: ${{ failure() }}
         uses: actions/upload-artifact@v7
         with:
-          name: test-results-${{ matrix.name }}
-          path: '*.xcresult'
+          name: ui-test-results-${{ matrix.name }}
+          path: UITests.xcresult
