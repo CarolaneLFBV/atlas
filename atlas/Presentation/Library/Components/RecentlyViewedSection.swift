@@ -17,7 +17,7 @@ struct RecentlyViewedSection: View {
             VStack(spacing: 0) {
                 ForEach(Array(items.enumerated()), id: \.element.id) { index, item in
                     if index > 0 {
-                        Rectangle().fill(AtlasColor.separator).frame(height: Sizing.hairline)
+                        HairlineDivider()
                             .padding(.leading, 28 + Spacing.s12)
                     }
                     DocumentationLink(entry: item.entry) {

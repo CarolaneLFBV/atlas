@@ -9,10 +9,10 @@ final class ReadingUITests: XCTestCase {
     private func openFixturePage(in app: XCUIApplication) {
         app.buttons["library.search"].tap()
         let field = app.searchFields.firstMatch
-        XCTAssertTrue(field.waitForExistence(timeout: 5))
+        XCTAssertTrue(field.waitForExistence(timeout: 5), "Search field didn't appear")
         field.typeText("NavigationStack")
         let topHit = app.buttons["search.topHit"]
-        XCTAssertTrue(topHit.waitForExistence(timeout: 5))
+        XCTAssertTrue(topHit.waitForExistence(timeout: 5), "No top hit for NavigationStack")
         topHit.tap()
     }
 
@@ -26,7 +26,7 @@ final class ReadingUITests: XCTestCase {
         bookmark.tap()
         XCTAssertEqual(bookmark.label, "Remove Bookmark")
 
-        app.openTab("Bookmarks")
+        app.openSection("Bookmarks")
         XCTAssertTrue(app.staticTexts["NavigationStack"].waitForExistence(timeout: 5))
     }
 
@@ -36,9 +36,9 @@ final class ReadingUITests: XCTestCase {
         openFixturePage(in: app)
 
         let copy = app.buttons["codeSnippet.copy"].firstMatch
-        XCTAssertTrue(copy.waitForExistence(timeout: 5))
+        XCTAssertTrue(copy.waitForExistence(timeout: 5), "No copy button on the page")
         copy.tap()
 
-        XCTAssertTrue(app.buttons["Copied"].waitForExistence(timeout: 2))
+        XCTAssertTrue(app.buttons["Copied"].waitForExistence(timeout: 2), "Copy wasn't confirmed")
     }
 }

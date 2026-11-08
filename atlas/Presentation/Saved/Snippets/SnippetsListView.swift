@@ -21,7 +21,7 @@ struct SnippetsListView: View {
             } else {
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: Spacing.s24) {
-                        filterBar
+                        SnippetFilterBar(selection: $filter, totalCount: snippets.snippets.count)
                         ForEach(visibleSnippets) { snippet in
                             SnippetCard(snippet: snippet) { editingSnippet = snippet }
                         }
@@ -45,22 +45,6 @@ struct SnippetsListView: View {
         .sheet(item: $editingSnippet) { snippet in
             SnippetEditorView(snippet: snippet)
         }
-    }
-
-    private var filterBar: some View {
-        ScrollView(.horizontal) {
-            HStack(spacing: Spacing.inline) {
-                ForEach(SnippetFilter.allCases, id: \.self) { option in
-                    FilterChip(
-                        title: option.title,
-                        count: option == .all ? snippets.snippets.count : nil,
-                        isSelected: filter == option
-                    ) { filter = option }
-                }
-            }
-        }
-        .scrollIndicators(.hidden)
-        .scrollClipDisabled()
     }
 }
 

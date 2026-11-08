@@ -43,28 +43,20 @@ struct ContentBlockView: View {
                             .font(.atlasBody)
                             .foregroundStyle(.secondary)
                             .accessibilityHidden(true)
-                        blocks(item)
+                        ContentBlockStack(blocks: item, saveSnippet: saveSnippet, frameworkName: frameworkName)
                     }
                 }
             }
 
         case .aside(let style, let title, let content):
             AsideView(style: style, title: title) {
-                blocks(content)
+                ContentBlockStack(blocks: content, saveSnippet: saveSnippet, frameworkName: frameworkName)
             }
 
         case .unsupported(let kind):
             Label(.detailUnsupportedBlock(kind: kind), systemImage: "rectangle.dashed")
                 .font(.atlasSecondary)
                 .foregroundStyle(.secondary)
-        }
-    }
-
-    private func blocks(_ blocks: [ContentBlock]) -> some View {
-        VStack(alignment: .leading, spacing: Spacing.stack) {
-            ForEach(Array(blocks.enumerated()), id: \.offset) { _, block in
-                ContentBlockView(block: block, saveSnippet: saveSnippet, frameworkName: frameworkName)
-            }
         }
     }
 }

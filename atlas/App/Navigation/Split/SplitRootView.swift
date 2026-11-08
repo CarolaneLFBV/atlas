@@ -9,7 +9,6 @@ struct SplitRootView: View {
     @State private var columnVisibility: NavigationSplitViewVisibility = .all
     /// Shares the repository's cache with the Library.
     @State private var catalogue: LibraryViewModel
-    @Environment(AppDependencies.self) private var dependencies
 
     init(dependencies: AppDependencies) {
         _catalogue = State(initialValue: LibraryViewModel(loadCatalogue: dependencies.loadCatalogue))
@@ -25,13 +24,13 @@ struct SplitRootView: View {
                 }
         } content: {
             NavigationStack {
-                contentColumn
+                SplitContentColumn(selection: selection)
             }
             .id(selection)
             .navigationSplitViewColumnWidth(min: 280, ideal: 320)
             .environment(\.openDocumentation, OpenDocumentationAction { navigator.replaceRoot(with: $0) })
         } detail: {
-            readingPane
+            ReadingPane(navigator: navigator)
         }
         .navigationSplitViewStyle(.balanced)
         .onChange(of: selection) { _, item in
@@ -41,38 +40,5 @@ struct SplitRootView: View {
             }
         }
         .environment(\.showSection, ShowSectionAction { selection = .section($0) })
-    }
-
-    @ViewBuilder
-    private var contentColumn: some View {
-        switch selection {
-        case .framework(let framework):
-            FrameworkContentColumn(viewModel: DocumentationDetailViewModel(
-                entry: framework.entry,
-                getDetail: dependencies.getDocumentationDetail
-            ))
-        case .section(let section):
-            AppSectionView(section: section)
-        case nil:
-            AppSectionView(section: .library)
-        }
-    }
-
-    @ViewBuilder
-    private var readingPane: some View {
-        if let root = navigator.root {
-            NavigationStack(path: $navigator.path) {
-                DocumentationDestinationView(entry: root)
-                    .documentationDestinations()
-            }
-            .id(root.id)
-            .environment(\.openDocumentation, OpenDocumentationAction { navigator.push($0) })
-        } else {
-            EmptyStateView(
-                .readingPaneEmptyTitle,
-                systemImage: AtlasSymbol.article,
-                message: .readingPaneEmptyMessage
-            )
-        }
     }
 }

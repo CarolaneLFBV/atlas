@@ -26,11 +26,11 @@ struct CodeSnippetView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            header
-            Rectangle().fill(AtlasColor.separator).frame(height: Sizing.hairline)
+            CodeSnippetHeader(code: code, language: language, title: title, frameworkName: frameworkName, saveAction: saveAction)
+            HairlineDivider()
             HStack(alignment: .top, spacing: Spacing.s12) {
                 if showsLineNumbers {
-                    lineNumbers
+                    CodeLineNumbers(count: displayedLineCount)
                 }
                 ScrollView(.horizontal) {
                     Text(highlighted ?? CodeTheme.highlighted(displayedCode, language: language))
@@ -49,43 +49,7 @@ struct CodeSnippetView: View {
     }
 
     /// 13 pt code on 20 pt lines.
-    private static let lineSpacing: CGFloat = 4
-
-    private var header: some View {
-        HStack(spacing: Spacing.inline) {
-            FrameworkDot(frameworkName: frameworkName ?? title, size: 8)
-            Text(verbatim: title ?? language.capitalized)
-                .font(.atlasMonoMeta)
-                .foregroundStyle(AtlasColor.secondaryText)
-                .lineLimit(1)
-            Spacer()
-            if let saveAction {
-                Button(action: saveAction) {
-                    Image(systemName: AtlasSymbol.snippets)
-                        .font(.footnote.weight(.semibold))
-                        .frame(width: Sizing.minimumHitTarget, height: Sizing.minimumHitTarget)
-                        .contentShape(Rectangle())
-                }
-                .buttonStyle(.borderless)
-                .accessibilityLabel(.codeSnippetSaveButton)
-            }
-            CopyButton(text: code)
-        }
-        .padding(.leading, Spacing.s12 + 2)
-        .padding(.trailing, Spacing.inline)
-        .frame(minHeight: Sizing.minimumHitTarget)
-    }
-
-    private var lineNumbers: some View {
-        VStack(alignment: .trailing, spacing: 0) {
-            Text(verbatim: (1...max(displayedLineCount, 1)).map(String.init).joined(separator: "\n"))
-                .font(.atlasCode)
-                .lineSpacing(Self.lineSpacing)
-                .multilineTextAlignment(.trailing)
-        }
-        .foregroundStyle(AtlasColor.tertiaryText)
-        .accessibilityHidden(true)
-    }
+    static let lineSpacing: CGFloat = 4
 }
 
 #if DEBUG

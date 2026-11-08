@@ -22,7 +22,7 @@ struct CopyButton: View {
             didCopy = true
             showToast(.copyButtonToast)
         } label: {
-            label
+            CopyButtonLabel(style: style, didCopy: didCopy)
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(didCopy ? AtlasColor.success : AtlasColor.secondaryText)
                 .padding(.horizontal, style == .labeled ? Spacing.s8 + 2 : 0)
@@ -40,21 +40,6 @@ struct CopyButton: View {
             guard didCopy else { return }
             try? await Task.sleep(for: .seconds(1.6)) // Cancelled when the view disappears; the reset is moot then.
             didCopy = false
-        }
-    }
-
-    @ViewBuilder
-    private var label: some View {
-        let symbol = Image(systemName: didCopy ? AtlasSymbol.copied : AtlasSymbol.copy)
-            .contentTransition(.symbolEffect(.replace))
-        switch style {
-        case .labeled:
-            HStack(spacing: Spacing.tight) {
-                symbol
-                Text(didCopy ? .copyButtonCopied : .copyButtonCopy)
-            }
-        case .icon:
-            symbol
         }
     }
 }
