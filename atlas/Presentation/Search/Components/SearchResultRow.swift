@@ -21,7 +21,7 @@ struct SearchResultRow: View {
                     .strikethrough(entry.isDeprecated, color: AtlasColor.secondaryText)
                     .lineLimit(2)
                     .truncationMode(.tail)
-                meta
+                SearchResultMeta(entry: entry, match: result.match)
                 if case .text(_, let excerpt) = result.match {
                     Text(SearchHighlight.highlighted(excerpt, query: query, emphasizes: true))
                         .font(.atlasSecondary)
@@ -35,23 +35,5 @@ struct SearchResultRow: View {
         // List separators start under the text, not under the tile.
         .alignmentGuide(.listRowSeparatorLeading) { _ in 26 + Spacing.s12 }
         .accessibilityElement(children: .combine)
-    }
-
-    private var meta: some View {
-        HStack(spacing: Spacing.tight) {
-            if entry.isDeprecated { DeprecatedBadge() }
-            if case .text(let sectionTitle, _) = result.match {
-                Text(sectionTitle)
-            } else {
-                KindTile.accessibilityName(for: entry.kind)
-            }
-            if let framework = entry.frameworkName {
-                Text(verbatim: "·")
-                FrameworkMarker(frameworkName: framework)
-            }
-        }
-        .font(.atlasCaption)
-        .foregroundStyle(AtlasColor.secondaryText)
-        .lineLimit(1)
     }
 }

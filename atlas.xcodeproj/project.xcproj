@@ -112,6 +112,9 @@
       "id": "519EDD9C30939466003052FB",
       "product": "Products/atlasUITests.xctest",
       "product-type": "bundle.ui-testing",
+      "dependencies": [
+        "atlas",
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -133,9 +136,9 @@
         "SWIFT_APPROACHABLE_CONCURRENCY": "YES",
         "SWIFT_EMIT_LOC_STRINGS": "NO",
         "SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY": "YES",
-        "SWIFT_VERSION": "5.0",
-        "TARGETED_DEVICE_FAMILY": "1,2,7",
-        "XROS_DEPLOYMENT_TARGET": "27.2",
+        "SWIFT_VERSION": "6.0",
+        "TARGETED_DEVICE_FAMILY": "1,2",
+        "TEST_TARGET_NAME": "atlas",
       },
     },
   ],

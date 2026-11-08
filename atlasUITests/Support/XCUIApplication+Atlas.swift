@@ -11,7 +11,12 @@ extension XCUIApplication {
     }
 
     @MainActor
-    func openTab(_ title: String) {
-        tabBars.buttons[title].firstMatch.tap()
+    func openSection(_ title: String) {
+        let tab = tabBars.buttons[title].firstMatch
+        if tab.exists {
+            tab.tap()
+        } else {
+            descendants(matching: .any)["sidebar.\(title.lowercased())"].firstMatch.tap()
+        }
     }
 }

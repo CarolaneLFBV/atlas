@@ -29,7 +29,7 @@ struct FrameworkTopicsList: View {
                         .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
-                    Rectangle().fill(AtlasColor.separator).frame(height: Sizing.hairline)
+                    HairlineDivider()
                 }
             }
         }

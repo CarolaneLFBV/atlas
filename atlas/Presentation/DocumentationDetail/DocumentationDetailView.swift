@@ -30,8 +30,19 @@ struct DocumentationDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: Spacing.section) {
-                header
-                content
+                DetailPageHeader(
+                    state: viewModel.state,
+                    entry: viewModel.entry,
+                    isFrameworkPage: isFrameworkPage,
+                    reload: reload
+                )
+                DetailPageContent(
+                    state: viewModel.state,
+                    webURL: viewModel.entry.webURL,
+                    isFrameworkPage: isFrameworkPage,
+                    reload: reload,
+                    saveSnippet: saveSnippet
+                )
             }
             .padding(.horizontal, margin)
             .padding(.top, Spacing.s8)
@@ -45,14 +56,25 @@ struct DocumentationDetailView: View {
         }
         .background(alignment: .top) {
             // Pulled up as the page scrolls; pulling down past the top doesn't detach it.
-            headerBackground.offset(y: -max(scrollOffset, 0))
+            DetailHeaderBand(
+                frameworkName: viewModel.displayedEntry.frameworkName,
+                title: viewModel.displayedEntry.title,
+                isFrameworkPage: isFrameworkPage
+            )
+            .offset(y: -max(scrollOffset, 0))
         }
         .background(isFrameworkPage ? AtlasColor.background : AtlasColor.surface)
         .navigationTitle(viewModel.displayedEntry.title)
         #if os(iOS)
         .navigationBarTitleDisplayMode(.inline)
         #endif
-        .toolbar { toolbarContent }
+        .toolbar {
+            DocumentationDetailToolbar(
+                webURL: viewModel.displayedEntry.webURL,
+                isBookmarked: bookmarks.isBookmarked(viewModel.displayedEntry.id),
+                toggleBookmark: { bookmarks.toggle(viewModel.displayedEntry) }
+            )
+        }
         .task {
             await viewModel.load()
             recentActivity.reload()
@@ -75,129 +97,13 @@ struct DocumentationDetailView: View {
         return ((detail.topics + detail.relationships).flatMap(\.entries) + detail.replacements).first { $0.id == id }
     }
 
-    // MARK: Sections
-
-    /// The band of the framework's color, drawn behind the scroll view so it reaches the top of the
-    /// screen under the navigation bar, and moved with the scroll offset so it stays at the top of the
-    /// page. Only the band ignores the safe area; the content doesn't.
-    @ViewBuilder
-    private var headerBackground: some View {
-        Group {
-            if isFrameworkPage {
-                DetailHeaderBackground(
-                    frameworkName: viewModel.displayedEntry.frameworkName ?? viewModel.displayedEntry.title,
-                    strength: 0.16, height: 460, planeWidth: 150, showsFullPlanes: true
-                )
-            } else {
-                DetailHeaderBackground(frameworkName: viewModel.displayedEntry.frameworkName)
-            }
-        }
-        .ignoresSafeArea(edges: .top)
-    }
-
-    private var header: some View {
-        VStack(alignment: .leading, spacing: Spacing.s16) {
-            if case .loaded(let fetched) = viewModel.state {
-                FreshnessNotice(freshness: fetched.freshness) {
-                    Task { await viewModel.load() }
-                }
-                if isFrameworkPage {
-                    FrameworkHeaderView(detail: fetched.value)
-                } else {
-                    DetailHeaderView(entry: fetched.value.entry, isDeprecated: fetched.value.isDeprecated)
-                }
-                if !isFrameworkPage, !fetched.value.availability.isEmpty {
-                    AvailabilityView(availability: fetched.value.availability, frameworkName: fetched.value.entry.frameworkName)
-                }
-            } else {
-                DetailHeaderView(entry: viewModel.entry)
-            }
-        }
-    }
-
-    @ViewBuilder
-    private var content: some View {
-        switch viewModel.state {
-        case .loading:
-            DetailLoadingView()
-        case .metadataOnly(let reason):
-            OfficialDocumentationCard(url: viewModel.entry.webURL, reason: reason)
-        case .failed(let message):
-            ErrorStateView(title: .detailErrorTitle, message: message) {
-                Task { await viewModel.load() }
-            }
-        case .loaded(let fetched):
-            loaded(fetched.value)
-        }
-    }
-
-    @ViewBuilder
-    private func loaded(_ detail: DocumentationDetail) -> some View {
-        if detail.isDeprecated {
-            DeprecationBanner(notice: detail.deprecationNotice, replacements: detail.replacements)
-        }
-        if let declaration = detail.declaration {
-            DeclarationView(declaration: declaration)
-        }
-        if isFrameworkPage {
-            FrameworkPageContent(detail: detail)
-        }
-        if detail.permission.allowsProse {
-            ForEach(detail.sections) { section in
-                VStack(alignment: .leading, spacing: Spacing.s16) {
-                    DetailSectionTitle(section.title)
-                    ForEach(Array(section.blocks.enumerated()), id: \.offset) { _, block in
-                        ContentBlockView(block: block, saveSnippet: saveSnippet, frameworkName: detail.entry.frameworkName)
-                    }
-                }
-            }
-        } else {
-            OfficialDocumentationCard(
-                url: detail.entry.webURL,
-                reason: String(localized: .detailFullTextOnWebsite)
-            )
-        }
-        if !isFrameworkPage, !detail.topics.isEmpty {
-            VStack(alignment: .leading, spacing: Spacing.s24) {
-                DetailSectionTitle(.detailTopicsTitle)
-                ForEach(detail.topics) { TopicGroupSection(group: $0) }
-            }
-        }
-        if !detail.relationships.isEmpty {
-            VStack(alignment: .leading, spacing: Spacing.s16) {
-                DetailSectionTitle(.detailRelatedTitle)
-                ForEach(detail.relationships) { RelatedSection(group: $0) }
-            }
-        }
-        LicenseFooter(permission: detail.permission, webURL: detail.entry.webURL)
+    private func reload() {
+        Task { await viewModel.load() }
     }
 
     private func saveSnippet(_ example: CodeSnippet) {
         if snippets.save(viewModel.snippetToSave(from: example)) {
             savedSnippetCount += 1
-        }
-    }
-
-    // MARK: Toolbar
-
-    @ToolbarContentBuilder
-    private var toolbarContent: some ToolbarContent {
-        let entry = viewModel.displayedEntry
-        ToolbarItemGroup(placement: .primaryAction) {
-            if let url = entry.webURL {
-                ShareLink(item: url)
-            }
-            BookmarkButton(isBookmarked: bookmarks.isBookmarked(entry.id)) {
-                bookmarks.toggle(entry)
-            }
-            .keyboardShortcut("d", modifiers: .command)
-        }
-        if let url = entry.webURL {
-            ToolbarItem(placement: .secondaryAction) {
-                Link(destination: url) {
-                    Label(.contextMenuOpenOnWeb, systemImage: AtlasSymbol.openExternal)
-                }
-            }
         }
     }
 }

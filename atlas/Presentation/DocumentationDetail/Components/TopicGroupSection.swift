@@ -5,7 +5,6 @@ import SwiftUI
 struct TopicGroupSection: View {
     let group: TopicGroup
     @State private var showsDeprecated: Bool
-    @Environment(\.horizontalSizeClass) private var horizontalSizeClass
 
     init(group: TopicGroup) {
         self.group = group
@@ -24,11 +23,11 @@ struct TopicGroupSection: View {
                 .foregroundStyle(AtlasColor.secondaryText)
                 .padding(.bottom, Spacing.s8)
                 .accessibilityAddTraits(.isHeader)
-            hairline
-            entries(current)
+            HairlineDivider()
+            TopicEntriesList(entries: current)
             if !deprecated.isEmpty {
                 DisclosureGroup(isExpanded: $showsDeprecated) {
-                    entries(deprecated)
+                    TopicEntriesList(entries: deprecated)
                 } label: {
                     Label(.topicsDeprecatedCount(count: deprecated.count), systemImage: "archivebox")
                         .font(.atlasSecondary)
@@ -40,33 +39,6 @@ struct TopicGroupSection: View {
                 .accessibilityIdentifier("topics.deprecated")
             }
         }
-    }
-
-    @ViewBuilder
-    private func entries(_ entries: [DocumentationEntry]) -> some View {
-        if horizontalSizeClass == .regular {
-            LazyVGrid(columns: [GridItem(.flexible(), spacing: Spacing.s12), GridItem(.flexible())], spacing: Spacing.s12) {
-                ForEach(entries) { entry in
-                    TopicRow(entry: entry)
-                        .padding(.horizontal, Spacing.s12)
-                        .frame(maxHeight: .infinity, alignment: .top)
-                        .cardSurface(padding: 0, fill: AtlasColor.background)
-                }
-            }
-            .padding(.top, Spacing.s12)
-        } else {
-            // Lazy: some groups are long (Swift Evolution lists hundreds of proposals).
-            LazyVStack(spacing: 0) {
-                ForEach(entries) { entry in
-                    TopicRow(entry: entry)
-                    hairline
-                }
-            }
-        }
-    }
-
-    private var hairline: some View {
-        Rectangle().fill(AtlasColor.separator).frame(height: Sizing.hairline)
     }
 }
 
